@@ -25,7 +25,7 @@ ts.setup {
   },
 }
 
--- from ensure_installed
+-- ensure_installed
 -- "yaml",
 -- "swift",
 -- "toml",

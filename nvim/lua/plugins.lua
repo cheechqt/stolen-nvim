@@ -8,10 +8,20 @@ vim.cmd [[packadd packer.nvim]]
 
 packer.startup(function(use)
   use 'wbthomason/packer.nvim'
-  use {
-    'svrana/neosolarized.nvim',
-    requires = { 'tjdevries/colorbuddy.nvim' }
-  }
+
+
+  -- use {
+  --   'svrana/neosolarized.nvim',
+  --   requires = { 'tjdevries/colorbuddy.nvim' }
+  -- }
+
+  -- use "EdenEast/nightfox.nvim"
+  -- vim.cmd("colorscheme nightfox")
+  --
+  use 'folke/tokyonight.nvim'
+
+
+
   use 'nvim-lualine/lualine.nvim' -- Statusline
   use 'neovim/nvim-lspconfig' -- LSP
   use 'glepnir/lspsaga.nvim' -- LSP UIs

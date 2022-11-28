@@ -1,0 +1,75 @@
+local status, n = pcall(require, "nightfox")
+if (not status) then return end
+--
+-- n.setup({
+--   option = {
+--     transparent = false,
+--   }
+-- })
+--
+-- Default options
+
+
+
+local palette = require('nightfox.palette').load('nightfox')
+local Color = require("nightfox.lib.color")
+
+
+require('nightfox').setup({
+  options = {
+    -- Compiled file's destination location
+    compile_path = vim.fn.stdpath("cache") .. "/nightfox",
+    compile_file_suffix = "_compiled", -- Compiled file suffix
+    transparent = true, -- Disable setting background
+    terminal_colors = true, -- Set terminal colors (vim.g.terminal_color_*) used in `:terminal`
+    dim_inactive = false, -- Non focused panes set to alternative background
+    module_default = true, -- Default enable value for modules
+    styles = { -- Style to be applied to different syntax groups
+      comments = "italic", -- Value is any valid attr-list value `:help attr-list`
+      conditionals = "NONE",
+      constants = "NONE",
+      functions = "NONE",
+      keywords = "NONE",
+      numbers = "NONE",
+      operators = "NONE",
+      strings = "NONE",
+      types = "NONE",
+      variables = "NONE",
+    },
+    inverse = { -- Inverse highlight for different types
+      match_paren = false,
+      visual = false,
+      search = false,
+    },
+    modules = { -- List of various plugins and additional options
+      -- ...
+    },
+  },
+  palettes = {
+    all = {
+      -- Each palette defines these colors:
+      --   black, red, green, yellow, blue, magenta, cyan, white, orange, pink
+      --
+      -- These colors have 3 shades: base, bright, and dim
+      --
+      -- Defining just a color defines it's base color
+      red = palette.red,
+      cyan = palette.cyan,
+      green = palette.green.bright,
+      white = palette.blue.dim
+    },
+  },
+  specs = {
+    all = {
+      syntax = {
+        functions = "blue.bright",
+        operator = "red.bright"
+      }
+    }
+  },
+
+  groups = {},
+})
+
+-- setup must be called before loading
+-- vim.cmd("colorscheme duskfox")

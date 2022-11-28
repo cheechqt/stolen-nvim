@@ -17,6 +17,24 @@ Group.new('CursorLine', colors.none, colors.base03, styles.NONE, colors.base1)
 Group.new('CursorLineNr', colors.yellow, colors.black, styles.NONE, colors.base1)
 Group.new('Visual', colors.none, colors.base03, styles.reverse)
 
+-- defaults
+Color.new('base03', '#002b36')
+Color.new('base02', '#073642')
+Color.new('base01', '#586e75')
+Color.new('base00', '#657b83')
+Color.new('base0', '#839496')
+Color.new('base1', '#93a1a1')
+Color.new('base2', '#eee8d5')
+Color.new('base3', '#fdf6e3')
+Color.new('yellow', '#b58900')
+Color.new('orange', '#cb4b16')
+Color.new('red', '#b58900') -- changed #dc322f
+Color.new('magenta', '#d33682')
+Color.new('violet', '#6c71c4')
+Color.new('blue', '#268bd2')
+Color.new('cyan', '#2aa198')
+Color.new('green', '#719e07')
+
 local cError = groups.Error.fg
 local cInfo = groups.Information.fg
 local cWarn = groups.Warning.fg
@@ -30,3 +48,7 @@ Group.new("DiagnosticUnderlineError", colors.none, colors.none, styles.undercurl
 Group.new("DiagnosticUnderlineWarn", colors.none, colors.none, styles.undercurl, cWarn)
 Group.new("DiagnosticUnderlineInfo", colors.none, colors.none, styles.undercurl, cInfo)
 Group.new("DiagnosticUnderlineHint", colors.none, colors.none, styles.undercurl, cHint)
+
+-- changes
+Group.new('Identifier', colors.orange, colors.none, styles.NONE)
+Group.new('DiffText', colors.blue, colors.base02, styles.bold, colors.blue)
