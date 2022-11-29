@@ -10,15 +10,15 @@ keymap.set('n', '-', '<C-x>')
 keymap.set('n', 'dw', 'vb"_d')
 
 -- Select all
-keymap.set('n', '<C-a>', 'gg<S-v>G')
+keymap.set('n', '<C-G>', 'gg<S-v>G')
 
 -- Save with root permission (not working for now)
 --vim.api.nvim_create_user_command('W', 'w !sudo tee > /dev/null %', {})
 
 -- New tab
-keymap.set('n', '<Space>t', ':tabedit<Return>')
+-- keymap.set('n', '<Space>t', ':tabedit<Return>')
 -- New tab + telescope find files
-keymap.set('n', '<Space>tt', ':tabedit<Return>:Telescope find_files<Return>')
+keymap.set('n', '<Space>t', ':tabedit<Return>:Telescope find_files<Return>')
 -- Split window
 keymap.set('n', 'ss', ':split<Return><C-w>w')
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
