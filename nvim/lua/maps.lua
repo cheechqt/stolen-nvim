@@ -17,6 +17,8 @@ keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
 keymap.set('n', '<Space>t', ':tabedit<Return>')
+-- New tab + telescope find files
+keymap.set('n', '<Space>tt', ':tabedit<Return>:Telescope find_files<Return>')
 -- Split window
 keymap.set('n', 'ss', ':split<Return><C-w>w')
 keymap.set('n', 'sv', ':vsplit<Return><C-w>w')
