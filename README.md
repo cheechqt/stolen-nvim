@@ -19,6 +19,8 @@ const options = {
   semi: true,
   tabWidth: 2,
   trailingComma: "none",
+  // npm install -D prettier-plugin-tailwindcss
+  plugins: [require("prettier-plugin-tailwindcss")],
   // npm install --save-dev @trivago/prettier-plugin-sort-imports
   importOrder: [
     "^react",
@@ -28,10 +30,10 @@ const options = {
     "^components/(.*)$",
     `^(?!react|@mui|styles|components|${`.\/`}|polished)`,
     "^styles",
-    "^[./]"
+    "^[./]",
   ],
   importOrderSeparation: false,
-  importOrderSortSpecifiers: false
+  importOrderSortSpecifiers: false,
 };
 
 module.exports = options;

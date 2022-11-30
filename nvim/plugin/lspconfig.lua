@@ -79,6 +79,21 @@ nvim_lsp.tsserver.setup {
   capabilities = capabilities
 }
 
+nvim_lsp.html.setup {
+  on_attach = on_attach,
+  filetypes = { "html" },
+  cmd = { "vscode-html-language-server", "--stdio" },
+  capabilities = capabilities,
+  init_options = {
+    configurationSection = { "html", "css", "javascript" },
+    embeddedLanguages = {
+      css = true,
+      javascript = true
+    },
+    provideFormatter = true
+  }
+}
+
 nvim_lsp.sourcekit.setup {
   on_attach = on_attach,
   capabilities = capabilities,
