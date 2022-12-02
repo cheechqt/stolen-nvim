@@ -85,10 +85,10 @@ nvim_lsp.html.setup {
   cmd = { "vscode-html-language-server", "--stdio" },
   capabilities = capabilities,
   init_options = {
-    configurationSection = { "html", "css", "javascript" },
+    configurationSection = { "html" },
     embeddedLanguages = {
-      css = true,
-      javascript = true
+      css = false,
+      javascript = false
     },
     provideFormatter = true
   }

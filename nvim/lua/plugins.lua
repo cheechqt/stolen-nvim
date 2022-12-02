@@ -10,15 +10,15 @@ packer.startup(function(use)
   use 'wbthomason/packer.nvim'
 
 
-  -- use {
-  --   'svrana/neosolarized.nvim',
-  --   requires = { 'tjdevries/colorbuddy.nvim' }
-  -- }
+  use {
+    'svrana/neosolarized.nvim',
+    requires = { 'tjdevries/colorbuddy.nvim' }
+  }
 
   -- use "EdenEast/nightfox.nvim"
   -- vim.cmd("colorscheme nightfox")
   --
-  use 'folke/tokyonight.nvim'
+  -- use 'folke/tokyonight.nvim'
 
 
 
