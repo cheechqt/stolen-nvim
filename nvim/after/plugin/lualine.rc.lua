@@ -1,10 +1,13 @@
 local status, lualine = pcall(require, "lualine")
 if (not status) then return end
 
+local custom_theme = require 'lualine.themes.solarized_dark'
+custom_theme.normal.a.bg = "#2AA198"
+
 lualine.setup {
   options = {
     icons_enabled = true,
-    theme = 'solarized_dark',
+    theme = custom_theme,
     section_separators = { left = '', right = '' },
     component_separators = { left = '', right = '' },
     disabled_filetypes = {}

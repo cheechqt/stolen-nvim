@@ -12,6 +12,9 @@ local Group = cb.Group
 local groups = cb.groups
 local styles = cb.styles
 
+-- syntax group is in place of the cursor
+-- :let s = synID(line('.'), col('.'), 1) | echo synIDattr(s, 'name') . ' -> ' . synIDattr(synIDtrans(s), 'name')
+
 Color.new('black', '#000000')
 Color.new('red', '#C0412F')
 Color.new('blue', '#268BAF')
