@@ -2,7 +2,7 @@ local status, lualine = pcall(require, "lualine")
 if (not status) then return end
 
 local custom_theme = require 'lualine.themes.solarized_dark'
-custom_theme.normal.a.bg = "#2AA198"
+custom_theme.normal.a.bg = "#719E07"
 
 lualine.setup {
   options = {

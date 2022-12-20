@@ -8,7 +8,7 @@ local esc = vim.api.nvim_replace_termcodes(
 
 
 comment.setup {
-
+  pre_hook = require('ts_context_commentstring.integrations.comment_nvim').create_pre_hook()
 }
 
 vim.keymap.set('n', '<Space>/', api.toggle.linewise.current)
