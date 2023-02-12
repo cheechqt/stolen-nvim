@@ -73,14 +73,20 @@ nvim_lsp.flow.setup {
 }
 
 nvim_lsp.tsserver.setup {
-  on_attach = on_attach,
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    enable_format_on_save(client, bufnr)
+  end,
   filetypes = { "javascript", "javascriptreact", "javascript.jsx", "typescript", "typescriptreact", "typescript.tsx" },
   cmd = { "typescript-language-server", "--stdio" },
   capabilities = capabilities
 }
 
 nvim_lsp.html.setup {
-  on_attach = on_attach,
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    enable_format_on_save(client, bufnr)
+  end,
   filetypes = { "html" },
   cmd = { "vscode-html-language-server", "--stdio" },
   capabilities = capabilities,
@@ -122,7 +128,10 @@ nvim_lsp.sumneko_lua.setup {
 }
 
 nvim_lsp.tailwindcss.setup {
-  on_attach = on_attach,
+  on_attach = function(client, bufnr)
+    on_attach(client, bufnr)
+    enable_format_on_save(client, bufnr)
+  end,
   capabilities = capabilities
 }
 

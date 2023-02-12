@@ -94,6 +94,11 @@ _G.packer_plugins = {
     path = "/Users/chch/.local/share/nvim/site/pack/packer/start/cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["colorbuddy.nvim"] = {
+    loaded = true,
+    path = "/Users/chch/.local/share/nvim/site/pack/packer/start/colorbuddy.nvim",
+    url = "https://github.com/tjdevries/colorbuddy.nvim"
+  },
   ["git.nvim"] = {
     loaded = true,
     path = "/Users/chch/.local/share/nvim/site/pack/packer/start/git.nvim",
@@ -133,6 +138,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/chch/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["neosolarized.nvim"] = {
+    loaded = true,
+    path = "/Users/chch/.local/share/nvim/site/pack/packer/start/neosolarized.nvim",
+    url = "https://github.com/svrana/neosolarized.nvim"
   },
   ["null-ls.nvim"] = {
     loaded = true,
@@ -174,6 +184,11 @@ _G.packer_plugins = {
     path = "/Users/chch/.local/share/nvim/site/pack/packer/start/nvim-ts-autotag",
     url = "https://github.com/windwp/nvim-ts-autotag"
   },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/Users/chch/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/Users/chch/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -189,11 +204,6 @@ _G.packer_plugins = {
     path = "/Users/chch/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
-  ["prettier.nvim"] = {
-    loaded = true,
-    path = "/Users/chch/.local/share/nvim/site/pack/packer/start/prettier.nvim",
-    url = "https://github.com/MunifTanjim/prettier.nvim"
-  },
   ["telescope-file-browser.nvim"] = {
     loaded = true,
     path = "/Users/chch/.local/share/nvim/site/pack/packer/start/telescope-file-browser.nvim",
@@ -203,11 +213,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/chch/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
-  },
-  ["tokyonight.nvim"] = {
-    loaded = true,
-    path = "/Users/chch/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
-    url = "https://github.com/folke/tokyonight.nvim"
   }
 }
 

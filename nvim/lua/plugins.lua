@@ -38,7 +38,6 @@ packer.startup(function(use)
   use 'windwp/nvim-ts-autotag'
 
   use 'jose-elias-alvarez/null-ls.nvim' -- Use Neovim as a language server to inject LSP diagnostics, code actions, and more via Lua
-  use 'MunifTanjim/prettier.nvim'
   use 'williamboman/mason.nvim'
   use 'williamboman/mason-lspconfig.nvim'
 
